@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RootViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +16,12 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    RootViewController * rootVC = [[[RootViewController alloc] init] autorelease];
+    UINavigationController * navVC = [[[UINavigationController alloc] initWithRootViewController:rootVC] autorelease];
+    self.window.rootViewController = navVC;
+    
+    
     return YES;
 }
 

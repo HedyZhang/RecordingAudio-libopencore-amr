@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E50B89E8-55FE-4088-9DF0-3B9529B67DEB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Recording</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40A2F503-0E70-4715-953C-18975E29A3EF</key>
+		<string>https://github.com/hehe19900512/RecordingAudio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Recording.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40A2F503-0E70-4715-953C-18975E29A3EF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hehe19900512/RecordingAudio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40A2F503-0E70-4715-953C-18975E29A3EF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40A2F503-0E70-4715-953C-18975E29A3EF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Recording原版</string>
+		</dict>
+	</array>
+</dict>
+</plist>

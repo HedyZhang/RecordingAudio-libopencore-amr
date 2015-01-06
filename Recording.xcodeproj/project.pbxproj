@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8666AC7194E9E32005D28C4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8666AC6194E9E32005D28C4 /* AudioToolbox.framework */; };
+		D86948F4194A88BE008A1705 /* AudioRecordingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D86948E2194A88BE008A1705 /* AudioRecordingServices.m */; };
+		D86948F5194A88BE008A1705 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D86948E6194A88BE008A1705 /* amrFileCodec.mm */; };
+		D86948F6194A88BE008A1705 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = D86948E8194A88BE008A1705 /* wav.mm */; };
+		D86948F7194A88BE008A1705 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86948EA194A88BE008A1705 /* libopencore-amrnb.a */; };
+		D86948F8194A88BE008A1705 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86948EB194A88BE008A1705 /* libopencore-amrwb.a */; };
+		D86948F9194A88BE008A1705 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = D86948F3194A88BE008A1705 /* VoiceConverter.mm */; };
 		D8DF388E1948385C000472AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF388D1948385C000472AE /* Foundation.framework */; };
 		D8DF38901948385C000472AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF388F1948385C000472AE /* CoreGraphics.framework */; };
 		D8DF38921948385C000472AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF38911948385C000472AE /* UIKit.framework */; };
@@ -19,6 +26,9 @@
 		D8DF38A91948385C000472AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF38911948385C000472AE /* UIKit.framework */; };
 		D8DF38B11948385C000472AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8DF38AF1948385C000472AE /* InfoPlist.strings */; };
 		D8DF38B31948385C000472AE /* RecordingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF38B21948385C000472AE /* RecordingTests.m */; };
+		D8DF38C2194838C2000472AE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DF38C0194838C2000472AE /* RootViewController.m */; };
+		D8DF38C3194838C2000472AE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DF38C1194838C2000472AE /* RootViewController.xib */; };
+		D8DF38CD19483ACD000472AE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF38CC19483ACD000472AE /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +42,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D845E2301985FDB3001678D2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D845E2321985FE17001678D2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D8666AC6194E9E32005D28C4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D86948E1194A88BE008A1705 /* AudioRecordingServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecordingServices.h; sourceTree = "<group>"; };
+		D86948E2194A88BE008A1705 /* AudioRecordingServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecordingServices.m; sourceTree = "<group>"; };
+		D86948E5194A88BE008A1705 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		D86948E6194A88BE008A1705 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		D86948E7194A88BE008A1705 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		D86948E8194A88BE008A1705 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		D86948EA194A88BE008A1705 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		D86948EB194A88BE008A1705 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		D86948ED194A88BE008A1705 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		D86948EE194A88BE008A1705 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		D86948F0194A88BE008A1705 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		D86948F1194A88BE008A1705 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		D86948F2194A88BE008A1705 /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		D86948F3194A88BE008A1705 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
 		D8DF388A1948385C000472AE /* Recording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DF388D1948385C000472AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8DF388F1948385C000472AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +75,10 @@
 		D8DF38AE1948385C000472AE /* RecordingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecordingTests-Info.plist"; sourceTree = "<group>"; };
 		D8DF38B01948385C000472AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8DF38B21948385C000472AE /* RecordingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordingTests.m; sourceTree = "<group>"; };
+		D8DF38BF194838C2000472AE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D8DF38C0194838C2000472AE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D8DF38C1194838C2000472AE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		D8DF38CC19483ACD000472AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8666AC7194E9E32005D28C4 /* AudioToolbox.framework in Frameworks */,
+				D8DF38CD19483ACD000472AE /* AVFoundation.framework in Frameworks */,
 				D8DF38901948385C000472AE /* CoreGraphics.framework in Frameworks */,
 				D8DF38921948385C000472AE /* UIKit.framework in Frameworks */,
+				D86948F7194A88BE008A1705 /* libopencore-amrnb.a in Frameworks */,
+				D86948F8194A88BE008A1705 /* libopencore-amrwb.a in Frameworks */,
 				D8DF388E1948385C000472AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,9 +109,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D86948E0194A88BE008A1705 /* AudioRecordingServices */ = {
+			isa = PBXGroup;
+			children = (
+				D86948E1194A88BE008A1705 /* AudioRecordingServices.h */,
+				D86948E2194A88BE008A1705 /* AudioRecordingServices.m */,
+				D86948E3194A88BE008A1705 /* VoiceConvert */,
+			);
+			path = AudioRecordingServices;
+			sourceTree = "<group>";
+		};
+		D86948E3194A88BE008A1705 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				D86948E4194A88BE008A1705 /* amrwapper */,
+				D86948E9194A88BE008A1705 /* lib */,
+				D86948EC194A88BE008A1705 /* opencore-amrnb */,
+				D86948EF194A88BE008A1705 /* opencore-amrwb */,
+				D86948F2194A88BE008A1705 /* VoiceConverter.h */,
+				D86948F3194A88BE008A1705 /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		D86948E4194A88BE008A1705 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				D86948E5194A88BE008A1705 /* amrFileCodec.h */,
+				D86948E6194A88BE008A1705 /* amrFileCodec.mm */,
+				D86948E7194A88BE008A1705 /* wav.h */,
+				D86948E8194A88BE008A1705 /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		D86948E9194A88BE008A1705 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				D86948EA194A88BE008A1705 /* libopencore-amrnb.a */,
+				D86948EB194A88BE008A1705 /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D86948EC194A88BE008A1705 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				D86948ED194A88BE008A1705 /* interf_dec.h */,
+				D86948EE194A88BE008A1705 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		D86948EF194A88BE008A1705 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				D86948F0194A88BE008A1705 /* dec_if.h */,
+				D86948F1194A88BE008A1705 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
 		D8DF38811948385C000472AE = {
 			isa = PBXGroup;
 			children = (
+				D86948E0194A88BE008A1705 /* AudioRecordingServices */,
 				D8DF38931948385C000472AE /* Recording */,
 				D8DF38AC1948385C000472AE /* RecordingTests */,
 				D8DF388C1948385C000472AE /* Frameworks */,
@@ -96,6 +193,10 @@
 		D8DF388C1948385C000472AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D845E2321985FE17001678D2 /* CoreFoundation.framework */,
+				D845E2301985FDB3001678D2 /* OpenGLES.framework */,
+				D8666AC6194E9E32005D28C4 /* AudioToolbox.framework */,
+				D8DF38CC19483ACD000472AE /* AVFoundation.framework */,
 				D8DF388D1948385C000472AE /* Foundation.framework */,
 				D8DF388F1948385C000472AE /* CoreGraphics.framework */,
 				D8DF38911948385C000472AE /* UIKit.framework */,
@@ -109,6 +210,9 @@
 			children = (
 				D8DF389C1948385C000472AE /* AppDelegate.h */,
 				D8DF389D1948385C000472AE /* AppDelegate.m */,
+				D8DF38BF194838C2000472AE /* RootViewController.h */,
+				D8DF38C0194838C2000472AE /* RootViewController.m */,
+				D8DF38C1194838C2000472AE /* RootViewController.xib */,
 				D8DF389F1948385C000472AE /* Images.xcassets */,
 				D8DF38941948385C000472AE /* Supporting Files */,
 			);
@@ -221,6 +325,7 @@
 			files = (
 				D8DF38981948385C000472AE /* InfoPlist.strings in Resources */,
 				D8DF38A01948385C000472AE /* Images.xcassets in Resources */,
+				D8DF38C3194838C2000472AE /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +346,11 @@
 			files = (
 				D8DF389E1948385C000472AE /* AppDelegate.m in Sources */,
 				D8DF389A1948385C000472AE /* main.m in Sources */,
+				D86948F4194A88BE008A1705 /* AudioRecordingServices.m in Sources */,
+				D8DF38C2194838C2000472AE /* RootViewController.m in Sources */,
+				D86948F6194A88BE008A1705 /* wav.mm in Sources */,
+				D86948F5194A88BE008A1705 /* amrFileCodec.mm in Sources */,
+				D86948F9194A88BE008A1705 /* VoiceConverter.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -346,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -357,10 +467,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Recording/Recording-Prefix.pch";
 				INFOPLIST_FILE = "Recording/Recording-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioRecording/VoiceConvert/lib",
+					"$(PROJECT_DIR)/AudioRecordingServices/VoiceConvert/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +488,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Recording/Recording-Prefix.pch";
 				INFOPLIST_FILE = "Recording/Recording-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioRecording/VoiceConvert/lib",
+					"$(PROJECT_DIR)/AudioRecordingServices/VoiceConvert/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +562,7 @@
 				D8DF38B81948385C000472AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8DF38B91948385C000472AE /* Build configuration list for PBXNativeTarget "RecordingTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +571,7 @@
 				D8DF38BB1948385C000472AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
